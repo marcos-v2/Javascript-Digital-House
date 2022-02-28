@@ -1,0 +1,2 @@
+let autos =[{marca:"Ford",modelo:"Fiesta",precio:150000,cuotas:12,patente:"APL123",km:200,color:"Azul",anio:2019,vendido:false,},{marca:"Toyota",modelo:"Corolla",precio:100000,cuotas:14,patente:"JJK116",km:0,color:"Blanco",anio:2019,vendido:false,},];
+module.exports=autos
