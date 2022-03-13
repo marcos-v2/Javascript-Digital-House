@@ -1,0 +1,22 @@
+/* .tipografia-para-parrafo {font-family: Verdana;} */
+/* p {color:blue;} */
+
+body {font-family: 'Lato';
+    background-color: burlywood;
+    ;}
+
+h1 {font-weight: 300;
+font-size: 50px;}
+
+p{font-size: 17px;
+line-height: 24px;}
+.parrafo-destacado{color:salmon;
+font-size: 30px;
+line-height: 38px;}
+strong {color:green;}
+
+p strong {
+    background-color: orange;
+    color:white;
+    font-style: italic;
+}
