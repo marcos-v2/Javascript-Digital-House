@@ -2,7 +2,7 @@ body{font-family : "Roboto";
     font-size: 12px}
 header  nav ul li {list-style-type: none;}
 header  nav ul li {text-decoration: none;color:black;}    
-header  nav ul {padding: 0;
+header  nav ul {padding: 10 px 0
 }
 header {
     background-color: #EAC926;
