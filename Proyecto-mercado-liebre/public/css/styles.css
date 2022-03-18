@@ -10,10 +10,10 @@ header {
 .top-header p {text-align : center
 }
 header .button-container{text-align: center;
-header  button.bars-menu {text-align:center;
+header button.bars-menu {text-align: center;
     border-radius: 5x;
 background-color: #03264c;
 color: white;
-font: size 20px;
+font-size: 20px;
 padding: 10px,0}
 
