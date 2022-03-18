@@ -1,6 +1,19 @@
-body {
+body{font-family : "Roboto";
+    font-size: 12px}
+header  nav ul li {list-style-type: none;}
+header  nav ul li {text-decoration: none;color:black;}    
+header  nav ul {padding: 0;
+}
+header {
     background-color: #EAC926;
-    font-family : "Roboto"
     }
-p{font-size: 12px;}
-h3{font-size: 24px;}
+.top-header p {text-align : center
+}
+header .button-container{text-align: center;
+header  button.bars-menu {text-align:center;
+    border-radius: 5x;
+background-color: #03264c;
+color: white;
+font: size 20px;
+padding: 10px,0}
+

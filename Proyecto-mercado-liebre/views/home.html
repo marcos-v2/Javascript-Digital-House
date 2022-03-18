@@ -7,16 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mercado Liebre</title>
     <link href="/css/styles.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
     <header>
-        <img src="/images/logo-mercado-liebre.svg" alt="Logo Mercado Liebre" width="360">
-        <div><input type="text" placeholder="Busca Aquí"></div>
-        <p>Compra en cuotas y sin tarjeta de crédito</p>
+        <div class="top-header"><img src="/images/logo-mercado-liebre.svg" alt="Logo Mercado Liebre" width="360">
+            <div><button><i class="fas fa-search"></i></button><input type="text" placeholder="Busca Aquí"></div>
+            <p><i class="fas fa-hand-holding-usd"></i>Compra en cuotas y sin tarjeta de crédito</p></div>
+        
         <nav>
             <ul>
                 <li>Ofertas</li>
@@ -25,11 +26,16 @@
                 <li>Ayuda</li>
             </ul>
             <ul>
-                <li>Crea tu cuenta</li>
-                <li>Ingrear</li>
-                <li>Mis compras</li>
+                <a href=""> <li>Crea tu cuenta</li><i class="far fa-address-card"></i></a>
+
+                <a href=""><li>Ingresar</li><i class="fas fa-sign-in-alt"></i></a>
+
+                <a href=""><li>Mis compras</li><i class="fas fa-shopping-basket"></i></a>
+
             </ul>
         </nav>
+        <div class="button-container"><button class="bars-menu"><i class="fas fa-bars"></i></button></div>
+        
     </header>
     <section><img src="/images/img-home-banner.jpg" width="360" alt="home banner">
     </section>
