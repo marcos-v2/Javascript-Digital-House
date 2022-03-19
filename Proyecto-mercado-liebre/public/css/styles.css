@@ -18,12 +18,8 @@ header {
     }
 .top-header p {text-align : center
 }
-<<<<<<< HEAD
-header .button-container{text-align: center;}
-=======
 header .button-container{text-align: center;
 padding:10px}
->>>>>>> 4c99a8a15f8a640333e5a5c80eeaafaba678904a
 header button.bars-menu {text-align: center;
     border-radius: 5px;
     background-color: #03264c;
