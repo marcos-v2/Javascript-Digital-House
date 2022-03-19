@@ -1,17 +1,39 @@
 /* .tipografia-para-parrafo {font-family: Verdana;} */
 /* p {color:blue;} */
 *{box-sizing:border-box;}
+
 body {font-family: 'Lato';
     background-color: burlywood;
     ;}
+    .oculto {display: none;}
 
 .contenedor01{
-    width: 90%;
+    width: 70%;
+    max-width: 900px;
        background-color: salmon;
 padding:20px;
 border:solid black 5px;
+margin :auto;
 }
-.contenedor02{
+@media (min-width:570px) {
+    
+.contenedor01{
+    width: 90%;
+       background-color: black;
+border:solid salmon 5px;
+color:white;
+
+    
+    
+}
+@media(min-width:900px) {
+    
+    .contenedor01{  
+    color:red;}
+    .oculto{display:block;}  
+        
+    
+/* .contenedor02{
     width: 90vw;
        background-color: green;
 padding:20px;
@@ -22,7 +44,7 @@ border:solid red 5px;
        background-color:aliceblue;
 padding:15px;
 border:solid 5px blue;
-}
+} */
 /* h1 {font-weight: 300;
 font-size: 50px;}
 
