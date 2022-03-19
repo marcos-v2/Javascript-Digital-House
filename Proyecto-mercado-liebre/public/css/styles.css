@@ -9,7 +9,7 @@ header {
     }
 .top-header p {text-align : center
 }
-header .button-container{text-align: center;
+header .button-container{text-align: center;}
 header button.bars-menu {text-align: center;
     border-radius: 5x;
 background-color: #03264c;
@@ -17,3 +17,14 @@ color: white;
 font-size: 20px;
 padding: 10px,0}
 
+main section p.texto-titulares{font-size: 24px;}
+main section p.texto-precios{font-size: 18px;}
+main section p.texto-descuentos{font-size: 16px;}
+main section p.texto-descripciones{font-size: 16px;}
+main section p.texto-nombre-articulos{font-size: 16px;
+font-weight: bold;}
+footer div div.iconos{font-size: 32px;
+    padding-bottom: 10px;
+text-align: center;}
+footer div div.texto-titulares{font-size: 24px; text-align: center;}
+footer div p.texto-descripciones{text-align: center;}
