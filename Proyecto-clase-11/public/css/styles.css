@@ -1,11 +1,29 @@
 /* .tipografia-para-parrafo {font-family: Verdana;} */
 /* p {color:blue;} */
-
+*{box-sizing:border-box;}
 body {font-family: 'Lato';
     background-color: burlywood;
     ;}
 
-h1 {font-weight: 300;
+.contenedor01{
+    width: 90%;
+       background-color: salmon;
+padding:20px;
+border:solid black 5px;
+}
+.contenedor02{
+    width: 90vw;
+       background-color: green;
+padding:20px;
+border:solid red 5px;
+}
+.contenedor03{
+    width: 80%;
+       background-color:aliceblue;
+padding:15px;
+border:solid 5px blue;
+}
+/* h1 {font-weight: 300;
 font-size: 50px;}
 
 p{font-size: 17px;
@@ -19,4 +37,4 @@ p strong {
     background-color: orange;
     color:white;
     font-style: italic;
-}
+} */
