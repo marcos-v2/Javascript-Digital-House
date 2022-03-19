@@ -1,21 +1,35 @@
 body{font-family : "Roboto";
     font-size: 12px}
-header  nav ul li {list-style-type: none;}
-header  nav ul li {text-decoration: none;color:black;}    
-header  nav ul {padding: 10 px 0
+ 
+header  nav ul li {
+    list-style-type: none;}
+
+header  nav ul {
+    padding: 10 px 0
 }
+
+
+header  nav ul li {
+    text-decoration: none;
+    color:black;}  
+
 header {
     background-color: #EAC926;
     }
 .top-header p {text-align : center
 }
+<<<<<<< HEAD
 header .button-container{text-align: center;}
+=======
+header .button-container{text-align: center;
+padding:10px}
+>>>>>>> 4c99a8a15f8a640333e5a5c80eeaafaba678904a
 header button.bars-menu {text-align: center;
-    border-radius: 5x;
-background-color: #03264c;
-color: white;
-font-size: 20px;
-padding: 10px,0}
+    border-radius: 5px;
+    background-color: #03264c;
+    color : white;
+    font-size: 20px;
+    padding: 10px}
 
 main section p.texto-titulares{font-size: 24px;}
 main section p.texto-precios{font-size: 18px;}
