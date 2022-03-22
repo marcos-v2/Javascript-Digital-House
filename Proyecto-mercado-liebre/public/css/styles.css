@@ -27,9 +27,21 @@ header button.bars-menu {text-align: center;
     font-size: 20px;
     padding: 10px}
 
+main {
+max-width: 90vw;
+margin: auto;}    
+main div.articulo{
+    margin-top: 10px;
+   ;
+}
+.caja-articulo{ border-top: 1px solid #ebebeb;
+padding: 15px;}
+
+
 main section p.texto-titulares{font-size: 24px;}
 main section p.texto-precios{font-size: 18px;}
-main section p.texto-descuentos{font-size: 16px;}
+main section p.texto-descuentos{font-size: 16px;
+color: green}
 main section p.texto-descripciones{font-size: 16px;}
 main section p.texto-nombre-articulos{font-size: 16px;
 font-weight: bold;}
