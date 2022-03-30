@@ -174,7 +174,24 @@ article div.main-article {
     right: 20px;
     top: -15px;
 }
+footer{margin:10px}
+footer div div.iconos{font-size: 32px;
+    padding-bottom: 10px;
+text-align: center;
+color:#3483fa}
+footer div div.texto-titulares{font-size: 24px; text-align: center;
+color:#3483fa}
+footer div p.texto-descripciones{text-align: center;color:#3483fa}
 
+.perfil-usuario{display: flex;
+    justify-content: space-around
+;}
+.intereses-usuario{display: flex
+;
+flex-direction: column;
+/* flex-wrap:wrap; */
+margin: 10px;}
+.intereses-usuario div{display: inline;}
 
 
 
