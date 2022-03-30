@@ -182,18 +182,82 @@ color:#3483fa}
 footer div div.texto-titulares{font-size: 24px; text-align: center;
 color:#3483fa}
 footer div p.texto-descripciones{text-align: center;color:#3483fa}
-
+h4{margin-left: 10px;}
+.formulario {font-size: 18px;}
 .perfil-usuario{display: flex;
-    justify-content: space-around
+    justify-content: space-around;
+    align-items: baseline
 ;}
+.opcion-perfil{
+justify-items: flex-start;}
 .intereses-usuario{display: flex
 ;
 flex-direction: column;
 /* flex-wrap:wrap; */
 margin: 10px;}
 .intereses-usuario div{display: inline;}
+.etiqueta-campo{display:flex;
+    flex-direction: column;
+    margin: 5px 10px;}
 
+.etiqueta-campo input{
+    border:1px solid black;
+    border-radius: 5px;
+    width: 80%;
+    height: 24px;
+}
+.subida-foto {display: flex;
+    flex-direction: column;
+    margin: 5px 10px;}
+.subida-foto input{
+    border:none;
+    border-radius: 5px;
+    width: 80%;
+    height: 24px;
+    }
+.selector-fecha{margin: 5px 10px;}
+.selector-fecha input{
+   
+    border-radius: 5px;
+    /* width: 80%; */
+    height: 24px;
+    }
+.botonera{display: flex;
+justify-content: space-around;}
 
+button.boton {color:white ;
+background-color: #0044AA;
+/* font-size: 20px; */
+border-radius: 5px;
+margin: 5px;}
+.caja-login{display: flex;
+flex-direction: column;}
+.boton a{
+    text-decoration: none;
+}
+.boton a:visited{color:white}
+div.boton {
+    display:flex;
+    justify-content: center;
+    color:white ;
+    background-color: #0044AA;
+    /* font-size: 20px; */
+    border-radius: 5px;
+max-width: 80%;
+margin: auto;
+;}
+
+.formulario-login{display: flex;
+flex-direction: column;
+justify-items: center;}
+
+.formulario-login label{text-align: center;
+margin:5px;}
+.formulario-login input{
+    height: 20px;
+    border-radius: 5px;
+    margin: 5px;
+}
 
 
 

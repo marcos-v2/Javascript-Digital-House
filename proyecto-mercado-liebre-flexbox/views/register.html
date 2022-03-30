@@ -42,7 +42,7 @@
 
   </main>
   <section class="caja-formulario">
-    <div class="texto-bienvenida">Ingrese sus datos para poder utilizar nuestra plataforma</div>
+    <!-- <div class="texto-bienvenida">Ingrese sus datos para poder utilizar nuestra plataforma</div> -->
     <form action="" method="POST" class="formulario">
       <div class="etiqueta-campo">
         <label for="name">Nombre y apellido</label>
@@ -56,7 +56,7 @@
         <label for="email">Correo electrónico</label>
         <input type="email" name="email" id="email">
       </div>
-      <div class="etiqueta-campo">
+      <div class="selector-fecha">
         <label for="birth-date">Fecha de Nacimiento</label>
         <input type="date" name="birth-date" id="birth-date">
       </div>
@@ -65,14 +65,14 @@
         <input type="text" name="adress" id="adress">
 
       </div>
-      <h3>Perfil del usuario</h3>
+      <h4>Perfil del usuario</h4>
       <div class="perfil-usuario">
-        <input type="radio" name="perfil" value="comprador">
-        <label for="comprador">Comprador</label>
-        <input type="radio" name="perfil" value="vendedor">
-        <label for="vendedor">Vendedor</label>
+       <div class="opcion-perfil"> <input type="radio" name="perfil" value="comprador">
+        <label for="comprador">Comprador</label></div>
+      <div class="opcion-perfil">  <input type="radio" name="perfil" value="vendedor">
+        <label for="vendedor">Vendedor</label></div>
       </div>
-      <h3>Intereses</h3>
+      <h4>Intereses</h4>
       <div class="intereses-usuario">
         <div class="interes"> <input type="checkbox" name="intereses" value="electro">
           <label>Electro</label>
@@ -94,9 +94,9 @@
 
 
 
-      <div class="etiqueta-campo">
-        <label for="foto">Foto</label>
-        <input type="file" name="foto" accept=".jpg, .pdf, .png" id="foto">
+      <div class="subida-foto">
+        <label for="foto">Subí tu foto de perfil</label>
+        <input type="file" name="foto" accept=".jpg, .pdf, .png" id="foto"></div>
         <div class="etiqueta-campo">
           <label for="password">Contraseña</label>
           <input type="password" name="password" required minlenght="8" placeholder="ingresa tu contraseña"
@@ -104,11 +104,12 @@
         </div>
         <div class="etiqueta-campo">
           <label for="password-confirm">Repita la contraseña</label>
-          <input type="password" name="password-confirm" required minlenght="8" placeholder="ingresa tu contraseña"
+          <input type="password" name="password-confirm" required minlenght="8" placeholder="repetí tu contraseña"
             id="password-confirm">
         </div>
-        <button type="submit" class="button">Ingresar</button>
-        <button type="reset" class="button">Borrar</button>
+        <div class="botonera"><button type="submit" class="boton">Ingresar</button>
+          <button type="reset" class="boton">Borrar</button></div>
+        
 
 
     </form>
