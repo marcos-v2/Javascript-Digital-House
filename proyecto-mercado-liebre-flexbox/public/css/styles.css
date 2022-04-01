@@ -135,6 +135,7 @@ main section article i,
 }
 
 main section article i {
+    display: block;
     font-size: 16px;
     padding: 5px;
     width: 30px;
@@ -142,7 +143,12 @@ main section article i {
     border: 1px solid #39b54a;
     background-color: #FFF;
     border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    transition: transform 450ms;
 }
+main section article :hover i{transform:rotate(-90deg)}
 
 main section h3 {
     margin: 20px 0px;
@@ -163,7 +169,7 @@ article div.main-article {
 .   main section article p.discount{flex:70%} */
 
 .main section article i {
-    display: bock;
+    display: block;
     font-size: 16px;
     width: 30px;
     height: 30px;
@@ -174,14 +180,15 @@ article div.main-article {
     right: 20px;
     top: -15px;
 }
-footer{margin:10px}
+footer{margin:10px;
+background-color: white;}
 footer div div.iconos{font-size: 32px;
     padding-bottom: 10px;
 text-align: center;
-color:#3483fa}
+color:gray}
 footer div div.texto-titulares{font-size: 24px; text-align: center;
-color:#3483fa}
-footer div p.texto-descripciones{text-align: center;color:#3483fa}
+color:gray}
+footer div p.texto-descripciones{text-align: center;color:gray}
 h4{margin-left: 10px;}
 .formulario {font-size: 18px;}
 .perfil-usuario{display: flex;
@@ -229,7 +236,10 @@ button.boton {color:white ;
 background-color: #0044AA;
 /* font-size: 20px; */
 border-radius: 5px;
-margin: 5px;}
+margin: 5px;
+transition: background-color 450ms}
+button.boton:hover {background-color: #666;}
+
 .caja-login{display: flex;
 flex-direction: column;}
 .boton a{
@@ -245,6 +255,7 @@ div.boton {
     border-radius: 5px;
 max-width: 80%;
 margin: auto;
+
 ;}
 
 .formulario-login{display: flex;
@@ -258,30 +269,37 @@ margin:5px;}
     border-radius: 5px;
     margin: 5px;
 }
+/* h4.description{display:none}
+h4.description:hover{display: block;} */
 
-
+ main section article .description {display:none;}
+div.footer-item{margin: 10px;
+max-width: 29%;}
+div.footer-item div.iconos i{transition: color 450ms}
+div.footer-item:hover div.iconos i{color:green}
 
 @media (min-width: 361px) {
-    main section article .description {
+    main section article:hover .description {
         display: block;
     }
-
+    main section article:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    
+    }
     main section .products {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         }
-    main section .products article {width:41%}        
-    main section article div {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    
-    }}
+    main section .products article {width:41%}
+    footer{display: flex;}        
+   }
 
 
 
 @media (min-width: 769px) {
-    main section article .description {
-        display: block;}
+    /* main section article .description {
+        display: block;} */
         main section .products {
             display: flex;
             flex-wrap: wrap;
@@ -290,6 +308,7 @@ margin:5px;}
         main section .products article {width:21%} 
 
         main section article div {
-            box-shadow: 0px 0px 10px rgb(100, 100, 100);
+            /* box-shadow: 0px 0px 10px rgb(100, 100, 100); */
         
-        }}
+        }
+    }
