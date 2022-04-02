@@ -237,7 +237,9 @@ background-color: #0044AA;
 /* font-size: 20px; */
 border-radius: 5px;
 margin: 5px;
-transition: background-color 450ms}
+transition: background-color 450ms
+max-width:80%;
+height:24px;}
 button.boton:hover {background-color: #666;}
 
 .caja-login{display: flex;
@@ -265,7 +267,7 @@ justify-items: center;}
 .formulario-login label{text-align: center;
 margin:5px;}
 .formulario-login input{
-    height: 20px;
+    height: 24px;
     border-radius: 5px;
     margin: 5px;
 }
@@ -275,10 +277,15 @@ h4.description:hover{display: block;} */
  main section article .description {display:none;}
 div.footer-item{margin: 10px;
 max-width: 29%;}
-div.footer-item div.iconos i{transition: color 450ms}
-div.footer-item:hover div.iconos i{color:green}
+div.footer-item div.iconos i{
+    color: #0044AA;
+    transition: color 450ms}
+div.footer-item:hover div.iconos i{color:#39b54a}
+
+nav{display:none}
 
 @media (min-width: 361px) {
+    .burger-menu{display:none;}
     main section article:hover .description {
         display: block;
     }
@@ -293,7 +300,8 @@ div.footer-item:hover div.iconos i{color:green}
         }
     main section .products article {width:41%}
     footer{display: flex;}        
-   }
+   
+    nav{display:block}}
 
 
 
@@ -305,10 +313,4 @@ div.footer-item:hover div.iconos i{color:green}
             flex-wrap: wrap;
             justify-content: space-between;
             }
-        main section .products article {width:21%} 
-
-        main section article div {
-            /* box-shadow: 0px 0px 10px rgb(100, 100, 100); */
-        
-        }
-    }
+        main section .products article {width:21%} }
