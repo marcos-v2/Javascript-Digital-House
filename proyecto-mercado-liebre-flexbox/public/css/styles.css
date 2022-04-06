@@ -238,7 +238,7 @@ background-color: #0044AA;
 border-radius: 5px;
 margin: 5px;
 transition: background-color 450ms;
-max-width:80%;
+/* max-width:80%; */
 height:24px;}
 button.boton:hover {background-color: #666;}
 
@@ -255,7 +255,7 @@ div.boton {
     background-color: #0044AA;
     /* font-size: 20px; */
     border-radius: 5px;
-max-width: 80%;
+/* max-width: 80%; */
 margin: auto;
 
 ;}
@@ -275,6 +275,9 @@ margin:5px;}
 }
 /* h4.description{display:none}
 h4.description:hover{display: block;} */
+footer{display: flex;
+flex-direction: column;
+align-items: center;}
 
  main section article .description {display:none;}
 div.footer-item{margin: 10px;
@@ -285,6 +288,7 @@ div.footer-item div.iconos i{
 div.footer-item:hover div.iconos i{color:#39b54a}
 
 nav{display:none}
+.form.formulario-login{justify-content: center;}
 
 @media (min-width: 361px) {
     .burger-menu{display:none;}
@@ -302,7 +306,8 @@ nav{display:none}
         justify-content: space-between;
         }
     main section .products article {width:41%}
-    footer{display: flex;}        
+    footer{display: flex;
+    flex-direction: row;}        
    
     nav{display:flex;
     justify-content: space-around;}
