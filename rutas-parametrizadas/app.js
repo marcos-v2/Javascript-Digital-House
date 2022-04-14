@@ -8,12 +8,13 @@ let serie = [
 const express = require("express");
 const app = express();
 app.get("/:id", function (req, res) {
-  let serieBuscada = serie.find(function (show) {
+  let serieBuscada = serie.filter(function (show) {
     if (show.id == req.params.id) return show;
   });
-//   console.log(serieBuscada);
-  res.send(serieBuscada.name);
+  res.send(serieBuscada[0])
+  // res.send(req.params.id);
 });
+
 app.listen( process.env.PORT || 3000, ()=>{
     console.log('Servidor funcionando');
 });
