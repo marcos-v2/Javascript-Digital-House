@@ -1,3 +1,11 @@
 const express = require("express");
 const app=express();
+const { homedir } = require("os");
+const path = require("path");
+const publicPath = path.resolve(__dirname, "./public");
+app.use(express.static(publicPath));
 app.listen(3000,()=>console.log("Levantando un servidor con Express"));
+const rutaMain = require('./routes/main');
+// app.use(express.static('public'));
+app.use("/",rutaMain);
+// app.use("/about",rutaMain.about);
