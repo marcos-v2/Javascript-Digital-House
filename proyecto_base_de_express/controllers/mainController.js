@@ -6,10 +6,10 @@ const dishes=[{name:"Carpaccio fresco",desc:"Entrada Carpaccio de salmón con c
 {name:"Mousse de arroz",desc:"Mousse de arroz con leche y aroma de azahar U$S 27.50"},
 {name:"Espárragos blancos",desc:"Espárragos blancos con vinagreta de verduras y jamón ibérico U$S 37.50"}];
 const home = (req,res)=>{
-res.render("index");
-}
+res.render("index",{productos:dishes})};
+
 const mainController = {
     home,
 }
 // Acá exportamos el resultado
-module.exports= mainController
+module.exports = mainController;
