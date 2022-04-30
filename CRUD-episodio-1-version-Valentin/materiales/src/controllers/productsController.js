@@ -43,7 +43,7 @@ const controller = {
       (newProduct.price = req.body.price),
       (newProduct.id = products.length + 1);
     products.push(newProduct); // Pusheo el objeto ya cambiado a products
-    let newData = JSON.stringify(products); // Lo paso a JSON
+    let newData = JSON.stringify(products,null,2); // Lo paso a JSON
     fs.writeFileSync(productsFilePath, newData); // Lo escribo en el file
     res.redirect("/");
     // Así lo hizo César
@@ -80,7 +80,7 @@ const controller = {
     (product.category = req.body.category),
     (product.price = req.body.price)}})
     
-    let newData = JSON.stringify(products); // Lo paso a JSON
+    let newData = JSON.stringify(products,null,2); // Lo paso a JSON
     fs.writeFileSync(productsFilePath, newData); // Lo escribo en el archivo
     res.redirect("/products")
     //Sacando los console log debería andar igual, pero no lo probé
@@ -93,7 +93,7 @@ const controller = {
     function checkProduct(product){if(product.id != req.params.id) 
        {return product}}                                           
     products=products.filter(checkProduct)                         
-    let newData = JSON.stringify(products);
+    let newData = JSON.stringify(products,null,2);
     fs.writeFileSync(productsFilePath, newData);
     res.redirect("/products");
   }
