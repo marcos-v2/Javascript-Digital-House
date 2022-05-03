@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bloc de Notas</title>
+    </head>
+    <header>
+        <button>
+            <a href="/">Volver</a>
+        </button>
+    </header>
+    <body>
+        
+        <h1>Estas viendo el detalle de la nota <%= nota.titulo %></h1>
+
+        <label><%= nota.nota %></label>
+        <form action="/nota/<%= nota.id %>/editar?_method=DELETE" method="POST">
+            <button type="submit" >Borrar Nota</button>
+        </form>
+
+        <br>
+        <br>
+
+        <button>
+            <a href="/nota/<%= nota.id %>/editar">Ir a editar Nota</a>
+        </button>
+
+    </body>
+</html>

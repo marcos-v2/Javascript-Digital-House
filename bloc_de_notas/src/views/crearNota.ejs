@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bloc de Notas</title>
+    </head>
+    <header>
+        <button>
+            <a href="/">Volver</a>
+        </button>
+    </header>
+    <body>
+
+        <form action="/nota/nueva" method="POST">
+            <label>Titulo:</label>
+            <input type="text" name="titulo"/>
+            <br>
+            <label>Nota:</label>
+            <input type="text" name="nota"/>
+            <br>
+            <button type="submit" >Crear Nota</button>
+        </form>
+        
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bloc de Notas</title>
+    </head>
+    <header>
+        <button>
+            <a href="/">Volver</a>
+        </button>
+    </header>
+    <body>
+        <br><br>
+        <form action="/nota/<%= nota.id %>/editar?_method=PUT" method="POST">
+            <label>Titulo:</label>
+            <input type="text" name="titulo" value="<%= nota.titulo %>"/>
+            <br>
+            <label>Nota:</label>
+            <input type="text" name="nota" value="<%= nota.nota %>"/>
+            <br><br>
+            <button type="submit" >Editar Nota</button>
+        </form>
+        
+    </body>
+</html>
