@@ -27,9 +27,11 @@ const logMiddleware=require("./middlewares/userLogs");
 app.use(logMiddleware);
 const mainRouter = require('./routes/main');
 const servicesRouter=require("./routes/servicesRouter");
+const adminRouter=require("./routes/adminRouter.js");
+
 app.use('/', mainRouter);
 app.use("/services",servicesRouter);
-
+app.use("/admin",adminRouter);  
 
 
 // ************ DON'T TOUCH FROM HERE ************
