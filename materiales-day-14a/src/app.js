@@ -25,6 +25,8 @@ app.set('views', './src/views'); // Seteo de la ubicación de la carpeta "views"
 // ************ Route System require and use() ************
 const logMiddleware=require("./middlewares/userLogs");
 app.use(logMiddleware);
+const adminValidMiddleware=require("./middlewares/adminValid");
+app.use(adminValidMiddleware);
 const mainRouter = require('./routes/main');
 const servicesRouter=require("./routes/servicesRouter");
 const adminRouter=require("./routes/adminRouter.js");
