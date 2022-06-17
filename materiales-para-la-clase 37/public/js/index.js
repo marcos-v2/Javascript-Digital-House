@@ -1,0 +1,1 @@
+const tagMain =document.querySelector.apply("main");
